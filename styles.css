@@ -1,8 +1,12 @@
 body {
+    background-attachment: fixed;
     background-image: url('images/bg.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 table, th, td {
@@ -16,4 +20,100 @@ th, td {
     background-color: steelblue;
     border-radius: 10px;
     border-style: none;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+.navbar-nav {
+    margin: 0 auto;
+}
+.nav-link {
+    color: #fff;
+    transition: color 0.2s ease;
+}
+.nav-link:hover {
+    color: #ccc;
+}
+.hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    text-align: justify;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.portfolio {
+    padding: 5rem 0;
+}
+.portfolio img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about {
+    padding: 5rem 0;
+    background-color: #f0f0f0;
+}
+.about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.contact {
+    padding: 5rem 0;
+    background-color: #333;
+    color: #fff;
+}
+.contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact button {
+    background-color: #555;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contact button:hover {
+    background-color: #666;
+}
+.blur-box {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
